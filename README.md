@@ -27,4 +27,4 @@
 |25| default payment next month | Numerical | Indicates whether the client defaulted on the payment next month (1=yes, 0=no) |
 
 
-![Diagram]([http://url/to/img.png](https://drive.google.com/file/d/1rbkIr1U8tqNm1M1AP0dg4P-sr56abreS/view?usp=drive_link)https://drive.google.com/file/d/1rbkIr1U8tqNm1M1AP0dg4P-sr56abreS/view?usp=drive_link)
+![Diagram](https://drive.google.com/uc?export=download&id=1rbkIr1U8tqNm1M1AP0dg4P-sr56abreS)
