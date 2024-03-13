@@ -25,3 +25,6 @@
 |23| PAY_AMT5                    | Numerical | Amount of previous payment in May 2005 (NT dollar) |
 |24| PAY_AMT6                    | Numerical | Amount of previous payment in April 2005 (NT dollar) |
 |25| default payment next month | Numerical | Indicates whether the client defaulted on the payment next month (1=yes, 0=no) |
+
+
+![Diagram]([http://url/to/img.png](https://drive.google.com/file/d/1rbkIr1U8tqNm1M1AP0dg4P-sr56abreS/view?usp=drive_link)https://drive.google.com/file/d/1rbkIr1U8tqNm1M1AP0dg4P-sr56abreS/view?usp=drive_link)
