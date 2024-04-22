@@ -32,11 +32,11 @@
 
 ## Tools Used for MLOps
 
-*GitHub
-*Airflow
-*DVC
-*Google Cloud Platform (GCP)
-*MLflow
-*TensorFlow Data Validation
+* GitHub
+* Airflow
+* DVC
+* Google Cloud Platform (GCP)
+* MLflow
+* TensorFlow Data Validation
 
 ## Data Pipeline
