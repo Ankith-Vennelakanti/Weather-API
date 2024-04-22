@@ -28,3 +28,15 @@
 
 
 ![Diagram](https://drive.google.com/uc?export=download&id=1rbkIr1U8tqNm1M1AP0dg4P-sr56abreS)
+
+
+## Tools Used for MLOps
+
+*GitHub
+*Airflow
+*DVC
+*Google Cloud Platform (GCP)
+*MLflow
+*TensorFlow Data Validation
+
+## Data Pipeline
