@@ -94,7 +94,7 @@ The model has three hyperparameters namely learning_rate, num_leaves, max_depth.
 The model is analysed by using the TensorFlow Board. We analyse on Accuracy, AUC_Score and Logloss.
 
 Accuracy
-![Diagram](https://drive.google.com/file/d/1nUYTORQB7dZ7PqW2w8tFrvWjFMWnE7Qn/view?usp=sharing)
+![Accuracy](https://drive.google.com/file/d/1wAqg_qIzufbwNOl18MzU7Y5-lSz8orTe/view?usp=drive_link)
 
 AUC_Score
 ![Diagram](https://drive.google.com/file/d/1nUYTORQB7dZ7PqW2w8tFrvWjFMWnE7Qn/view?usp=sharing)
