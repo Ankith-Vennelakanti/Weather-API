@@ -40,5 +40,29 @@
 * TensorFlow Data Validation
 
 ## Data Pipeline
-- `train_validate.py`: This function loads processed data from a pickle file, splits it into training and validation sets, in 75:25 ratio and dumps them into `train_val_data` and `test_val_data` pickle files respectively<br>
-Then it infers schema from the training data, writes the inferred schema to `schema.pbtxt`, generates statistics from the validation data, validates the statistics against the inferred schema, and logs any anomalies.
+We have 2 DAGs in use for our project.
+1. Train data DAG
+2. Test data DAG
+
+## Train Data Pipeline Components
+
+### 1. Pre-processing Data:
+The first stage involves downloading the dataset into the `data` directory. Then the following processes are executed:
+- `dataSplit.py`: Responsible for downloading the dataset from the specified source and splitting the data in a 90:10 ratio, where, the split 90% of the train data is stored in `train_val_data.xlsx`.
+- `preprocess.py`: We drop the columns 'ID',' EDUCATION', 'MARRIAGE', and 'AGE' from train data as a part of this step to avoid bias based on the mentioned columns and then store the processed data in `train_processed_data.pkl`
+### 2. Validate Data and Train Model:
+- `train_validate.py`: This function loads processed data from a pickle file, splits it into training and validation sets, in a 75:25 ratio, and dumps them into `train_val_data` and `test_val_data` pickle files respectively<br>
+Then it infers the schema from the training data, writes the inferred schema to `schema.pbtxt`, generates statistics from the validation data, validates the statistics against the inferred schema, and logs any anomalies.
+- `train_model.py`: Loads training and test data from the pickle file, scales the features using StandardScaler and trains a LightGBM model, logs relevant metrics and the model to MLflow, and saves the run ID to a pickle file.
+
+## Test Data Pipeline Components
+
+### 1. Pre-processing Data:
+We use  `test_data.xlsx` from the `dataSplit.py` run from the train DAG. Then the following processes are executed:
+
+- `preprocess.py`: We drop the columns 'ID',' EDUCATION', 'MARRIAGE', and 'AGE' from test data as a part of this step to avoid bias based on the mentioned columns and then store the processed data in `new_processed_data.pkl`
+
+- `new_data_validate.py`: Loads a predefined schema from `schema.pbtxt`, verifies the non-presence of the target feature in the new data,
+    generates statistical summaries from the new data, validates these statistics against the predefined schema, and logs any detected anomalies.
+
+- `predict.py`: Loads a pre-trained model and scaler from MLflow, scales the newly processed data, makes predictions using the model, logs the predictions, and saves the predicted data to a CSV file.
