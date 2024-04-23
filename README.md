@@ -121,7 +121,7 @@ ROC Curve
 ![Diagram](https://drive.google.com/file/d/1nUYTORQB7dZ7PqW2w8tFrvWjFMWnE7Qn/view?usp=sharing)
 
 Confusion Matrix
-![Diagram](https://drive.google.com/file/d/1nUYTORQB7dZ7PqW2w8tFrvWjFMWnE7Qn/view?usp=sharing)
+![ConfusionMatrix](https://drive.google.com/file/d/1bishYT8N7ZkIcMkNd1kNe0uSF47lUYBl/view?usp=sharing)
 
 
 
