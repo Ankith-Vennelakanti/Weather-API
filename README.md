@@ -40,3 +40,5 @@
 * TensorFlow Data Validation
 
 ## Data Pipeline
+- `train_validate.py`: This function loads processed data from a pickle file, splits it into training and validation sets, in 75:25 ratio and dumps them into `train_val_data` and `test_val_data` pickle files respectively<br>
+Then it infers schema from the training data, writes the inferred schema to `schema.pbtxt`, generates statistics from the validation data, validates the statistics against the inferred schema, and logs any anomalies.
