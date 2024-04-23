@@ -67,6 +67,66 @@ We use  `test_data.xlsx` from the `dataSplit.py` run from the train DAG. Then th
 
 - `predict.py`: Loads a pre-trained model and scaler from MLflow, scales the newly processed data, makes predictions using the model, logs the predictions, and saves the predicted data to a CSV file.
 
+
+## Experimental tracking (Mlflow)
+We track our model using mlflow and Python<br>
+For different values of learning_rate, num_leaves, max_depth we can see the auc score achieved.
+
+![Diagram](https://drive.google.com/file/d/1IbudxVBHbgCeSWhxvGMBN5fACHlS7Kxk/view?usp=drive_link)
+
+## Staging, Production and Archived models
+We rely on MLflow for managing models for Archiving, Staging, and Production as it allows us to reuse the models from artifacts registry and serve it on a predefined port on-the-go
+
+![Diagram](https://drive.google.com/file/d/1nUYTORQB7dZ7PqW2w8tFrvWjFMWnE7Qn/view?usp=sharing)
+
+## Machine Learning Model 
+
+### Train the Model
+The model is trained using  light gradient-boosting machine model. It takes x inputs and gives y outputs. The three inputs are a,b,c and outputs are m,n.
+
+### Save the Model
+The model is saved in mlflow
+
+### Hyper Parameter Tuning
+The model has three hyperparameters namely learning_rate, num_leaves, max_depth. We use MLFLOW for checking model with different hyper parameters values.
+
+### Model Analysis
+The model is analysed by using the TensorFlow Board. We analyse on Accuracy, AUC_Score and Logloss.
+
+Accuracy
+![Diagram](https://drive.google.com/file/d/1nUYTORQB7dZ7PqW2w8tFrvWjFMWnE7Qn/view?usp=sharing)
+
+AUC_Score
+![Diagram](https://drive.google.com/file/d/1nUYTORQB7dZ7PqW2w8tFrvWjFMWnE7Qn/view?usp=sharing)
+
+Logloss
+![Diagram](https://drive.google.com/file/d/1nUYTORQB7dZ7PqW2w8tFrvWjFMWnE7Qn/view?usp=sharing)
+
+### Model Efficacy Report and Visuals
+
+We get the model efficacy by using `line_profiler`. We used the code below to get the output.
+```python
+!pip install line_profiler
+
+%load_ext line_profiler
+ 
+# Run line-by-line profiling
+%lprun -f modelcomputational_report modelcomputational_report()
+```
+Output
+
+![Diagram](https://drive.google.com/file/d/1nUYTORQB7dZ7PqW2w8tFrvWjFMWnE7Qn/view?usp=sharing)
+
+ROC Curve
+![Diagram](https://drive.google.com/file/d/1nUYTORQB7dZ7PqW2w8tFrvWjFMWnE7Qn/view?usp=sharing)
+
+Confusion Matrix
+![Diagram](https://drive.google.com/file/d/1nUYTORQB7dZ7PqW2w8tFrvWjFMWnE7Qn/view?usp=sharing)
+
+
+
+\\\
+\\\\
 - ## Machine Learning Model 
 
 ### Train the Model
