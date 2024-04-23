@@ -94,10 +94,10 @@ The model has three hyperparameters namely learning_rate, num_leaves, max_depth.
 The model is analysed by using the TensorFlow Board. We analyse on Accuracy, AUC_Score and Logloss.
 
 Accuracy
-![Accuracy](https://drive.google.com/file/d/1wAqg_qIzufbwNOl18MzU7Y5-lSz8orTe/view?usp=drive_link)
+![Accuracy](https://drive.google.com/file/d/1wAqg_qIzufbwNOl18MzU7Y5-lSz8orTe/view)
 
 AUC_Score
-![Diagram](https://drive.google.com/file/d/1nUYTORQB7dZ7PqW2w8tFrvWjFMWnE7Qn/view?usp=sharing)
+![AUC](https://drive.google.com/file/d/1XP97NrRURjgjOJFXb6NByUcM7RgLNW4p/view)
 
 Logloss
 ![Diagram](https://drive.google.com/file/d/1nUYTORQB7dZ7PqW2w8tFrvWjFMWnE7Qn/view?usp=sharing)
@@ -121,7 +121,7 @@ ROC Curve
 ![Diagram](https://drive.google.com/file/d/1nUYTORQB7dZ7PqW2w8tFrvWjFMWnE7Qn/view?usp=sharing)
 
 Confusion Matrix
-![ConfusionMatrix](https://drive.google.com/file/d/1bishYT8N7ZkIcMkNd1kNe0uSF47lUYBl/view?usp=sharing)
+![ConfusionMatrix](https://drive.google.com/file/d/1bishYT8N7ZkIcMkNd1kNe0uSF47lUYBl/view)
 
 
 
@@ -146,6 +146,6 @@ The model has three hyperparameters namely learning_rate, num_leaves, max_depth.
 We track our model using mlflow and Python<br>
 For different values of learning_rate, num_leaves, max_depth we can see the AUC score achieved.
 
-![Diagram](https://drive.google.com/file/d/1nUYTORQB7dZ7PqW2w8tFrvWjFMWnE7Qn/view?usp=sharing)
+![Diagram](https://drive.google.com/file/d/1WzXIH5ithx6jY1EvXzF2y62VdyjjPgDH/view)
 
   
