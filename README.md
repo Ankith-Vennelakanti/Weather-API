@@ -66,3 +66,23 @@ We use  `test_data.xlsx` from the `dataSplit.py` run from the train DAG. Then th
     generates statistical summaries from the new data, validates these statistics against the predefined schema, and logs any detected anomalies.
 
 - `predict.py`: Loads a pre-trained model and scaler from MLflow, scales the newly processed data, makes predictions using the model, logs the predictions, and saves the predicted data to a CSV file.
+
+- ## Machine Learning Model 
+
+### Train the Model
+The model is trained using  the LightGBM (light gradient-boosting machine) model. It takes x inputs and gives y outputs. The three inputs are a,b,c, and the outputs are m,n.
+### Save the Model
+The model is saved in mlflow
+### Hyper Parameter Tuning
+The model has three hyperparameters namely learning_rate, num_leaves, max_depth. We use MLFLOW for checking models with different hyperparameter values.
+### Model Analysis
+
+### Model Efficacy Report and Visuals
+
+## Experimental tracking (Mlflow)
+We track our model using mlflow and Python<br>
+For different values of learning_rate, num_leaves, max_depth we can see the AUC score achieved.
+
+![Diagram](https://drive.google.com/file/d/1IbudxVBHbgCeSWhxvGMBN5fACHlS7Kxk/view?usp=drive_link)
+
+  
