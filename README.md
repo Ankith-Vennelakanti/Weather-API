@@ -86,6 +86,6 @@ The model has three hyperparameters namely learning_rate, num_leaves, max_depth.
 We track our model using mlflow and Python<br>
 For different values of learning_rate, num_leaves, max_depth we can see the AUC score achieved.
 
-![ExperimentTracking](https://drive.google.com/file/d/1IbudxVBHbgCeSWhxvGMBN5fACHlS7Kxk/view?usp=drive_link)
+![Diagram](https://drive.google.com/file/d/1nUYTORQB7dZ7PqW2w8tFrvWjFMWnE7Qn/view?usp=sharing)
 
   
