@@ -71,10 +71,13 @@ We use  `test_data.xlsx` from the `dataSplit.py` run from the train DAG. Then th
 
 ### Train the Model
 The model is trained using  the LightGBM (light gradient-boosting machine) model. It takes x inputs and gives y outputs. The three inputs are a,b,c, and the outputs are m,n.
+
 ### Save the Model
-The model is saved in mlflow
+The model is saved as versions in mlflow
+
 ### Hyper Parameter Tuning
-The model has three hyperparameters namely learning_rate, num_leaves, max_depth. We use MLFLOW for checking models with different hyperparameter values.
+The model has three hyperparameters namely learning_rate, num_leaves, max_depth. We use MLFLOW to check the model with different hyper parameter values.
+
 ### Model Analysis
 
 ### Model Efficacy Report and Visuals
